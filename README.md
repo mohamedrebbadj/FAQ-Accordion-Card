@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Screenshot
 
-Live Preview Here [Live Preview](faq-accordion-card-mohamedamine.netlify.app)
+Live Preview Here [Live Preview](https://faq-accordion-card-mohamedamine.netlify.app/)
 
 ![Desktop preview](./images/desktop-preview.png)
 
@@ -39,7 +39,7 @@ Live Preview Here [Live Preview](faq-accordion-card-mohamedamine.netlify.app)
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [SimpleBar](https://github.com/Grsmto/simplebar) - This helped me for make esthetic scrollbar. I really liked this pattern and will use it going forward.
 
 ## Author
 - Frontend Mentor - [@mohamedrebbadj](https://www.frontendmentor.io/profile/mohamedrebbadj)
