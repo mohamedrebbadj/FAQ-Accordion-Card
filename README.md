@@ -24,7 +24,9 @@ Users should be able to:
 
 ### Screenshot
 
-![](./images/screencapture-127-0-0-1-5500-2021-10-18-15_34_40.png.jpg)
+Live Preview Here [Live Preview]()
+
+![Desktop preview](./images/desktop-preview.png)
 
 ### My Process
 
