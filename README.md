@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Screenshot
 
-Live Preview Here [Live Preview]()
+Live Preview Here [Live Preview](faq-accordion-card-mohamedamine.netlify.app)
 
 ![Desktop preview](./images/desktop-preview.png)
 
