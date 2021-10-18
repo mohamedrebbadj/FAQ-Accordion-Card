@@ -1,0 +1,204 @@
+// Variables
+$breakpoint-md: 992px;
+:root {
+  --very-dark-desaturated-blue: hsl(238, 29%, 16%);
+  --soft-red: hsl(14, 88%, 65%);
+  --soft-violet: hsl(273, 75%, 66%);
+  --soft-blue: hsl(240, 73%, 65%);
+  --very-dark-grayish-blue: hsl(237, 12%, 33%);
+  --dark-grayish-blue: hsl(240, 6%, 50%);
+  --light-grayish-blue: hsl(240, 5%, 91%);
+}
+// Elements
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+body {
+  font: {
+    family: "Kumbh Sans";
+    size: 12px;
+    weight: 400;
+  }
+  min-height: 100vh;
+  color: var(--very-dark-grayish-blue);
+  background: linear-gradient(var(--soft-violet), var(--soft-blue));
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+// Classes
+// ===> The white container
+.page-wrapper {
+  width: 325px;
+  background-color: #fff;
+  position: relative;
+  border-radius: 1.5rem;
+  height: 520px;
+  margin: 150px 0 50px 0;
+  &::before {
+    content: url("../images/bg-pattern-mobile.svg");
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+// Page title
+.title-1 {
+  text-align: center;
+  font-size: 2.6em;
+  margin-bottom: 10px;
+}
+// accordion widget
+.accordion {
+  padding: 0px 25px;
+  overflow-y: auto;
+  height: 280px;
+  &__item {
+    position: relative;
+    // Accordion items divider
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 1px;
+      height: 1px;
+      width: 100%;
+      background-color: var(--light-grayish-blue);
+    }
+    // If accordion item is active show its content
+    &.active &-content {
+      display: block;
+    }
+    // Change the appearance accordion item title when accordion item is active
+    &.active &-title {
+      font-weight: 700;
+      color: var(--very-dark-desaturated-blue);
+      &:hover {
+        color: var(--soft-red);
+      }
+    }
+    &-title {
+      border: 0;
+      display: block;
+      width: 100%;
+      text-align: left;
+      font-family: inherit;
+      color: inherit;
+      background: transparent;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0px;
+      color: var(--very-dark-grayish-blue);
+    }
+    &-content {
+      padding-bottom: 20px;
+      color: var(--dark-grayish-blue);
+    }
+  }
+}
+.overflowed-box {
+  display: none;
+}
+.img-container {
+  img {
+    position: relative;
+    top: -108px;
+    left: 15px;
+    margin-bottom: -75px;
+  }
+}
+.attribution {
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 25px;
+  line-height: 1.8;
+  width: 325px;
+}
+.attribution a {
+  color: var(--soft-red);
+}
+// ==> Helper Classes
+.col {
+  &__md--6 {
+    position: relative;
+  }
+  &--h100 {
+    height: 100%;
+  }
+}
+.hidden {
+  display: none;
+}
+// Custom scrollbar [simplebar framework] styles
+.simplebar-scrollbar::before {
+  background-color: var(--soft-blue);
+}
+.simplebar-track.simplebar-vertical {
+  width: 8px;
+}
+.simplebar-track {
+  right: 10px;
+  background-color: var(--light-grayish-blue);
+}
+// Style for desktop screens
+@media screen and (min-width: $breakpoint-md) {
+  .page-wrapper {
+    margin: 0 0 0 50px;
+    width: 920px;
+    padding-right: 100px;
+    &::before {
+      content: "";
+    }
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  .title-1 {
+    text-align: left;
+    padding-left: 25px;
+  }
+  .col__md--6 {
+    width: 50%;
+  }
+  .img-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background: url("../images/bg-pattern-desktop.svg") -590px -300px no-repeat;
+    img {
+      position: relative;
+      left: -100px;
+      top: auto;
+      margin-bottom: 0;
+    }
+  }
+  .overflowed-box {
+    display: block;
+    position: absolute;
+    top: 205px;
+    left: -100px;
+    animation: Rotate 8s 0.5s ease-in-out infinite;
+  }
+  .attribution {
+    width: auto;
+  }
+}
+// Rotate animation
+@keyframes Rotate {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}

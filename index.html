@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
+    />
+    <link rel="stylesheet" href="./css/style.min.css" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <!-- Page Wrapper -->
+    <main class="page-wrapper">
+      <div class="container">
+        <div class="col__md--6 col--h100">
+          <div class="img-container">
+            <picture>
+              <source
+                srcset="./images/illustration-woman-online-desktop.svg"
+                type="image/svg+xml"
+                media="(min-width: 992px)"
+              />
+              <img
+                aria-hidden="true"
+                src="./images/illustration-woman-online-mobile.svg"
+                alt=""
+              />
+            </picture>
+          </div>
+          <img
+            src="./images/illustration-box-desktop.svg"
+            width="191"
+            height="184"
+            aria-hidden="true"
+            alt=""
+            class="overflowed-box"
+          />
+        </div>
+        <div class="col__md--6">
+          <h1 class="title-1">FAQ</h1>
+          <div class="accordion">
+            <div class="accordion__item">
+              <button class="accordion__item-title">
+                How many team members can I invite?<img
+                  src="./images/icon-arrow-down.svg"
+                  alt=""
+                />
+              </button>
+              <div class="accordion__item-content">
+                You can invite up to 2 additional users on the Free plan. There
+                is no limit on team members for the Premium plan.
+              </div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__item-title">
+                What is the maximum file upload size?<img
+                  src="./images/icon-arrow-down.svg"
+                  alt=""
+                />
+              </button>
+              <div class="accordion__item-content">
+                No more than 2GB. All files in your account must fit your
+                allotted storage space.
+              </div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__item-title">
+                How do I reset my password?<img
+                  src="./images/icon-arrow-down.svg"
+                  alt=""
+                />
+              </button>
+              <div class="accordion__item-content">
+                Click “Forgot password” from the login page or “Change password”
+                from your profile page. A reset link will be emailed to you.
+              </div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__item-title">
+                Can I cancel my subscription?<img
+                  src="./images/icon-arrow-down.svg"
+                  alt=""
+                />
+              </button>
+              <div class="accordion__item-content">
+                Yes! Send us a message and we’ll process your request no
+                questions asked.
+              </div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__item-title">
+                Do you provide additional support?<img
+                  src="./images/icon-arrow-down.svg"
+                  alt=""
+                />
+              </button>
+              <div class="accordion__item-content">
+                Chat and email support is available 24/7. Phone lines are open
+                during normal business hours.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.upwork.com/o/profiles/users/~01dddc43ad2c43ce3c/"
+        >Mohamed Amine</a
+      >.
+    </div>
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
